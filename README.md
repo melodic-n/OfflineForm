@@ -2,7 +2,7 @@ To use this Onlinefom :
   - You need to run the server "server.py"
   - Install on your phone (android) : NetShare, it allows t share hotspot local network without using your 4g connection 
   - launch the hotspot from your phone
-  - and have the students connect to it and connect your laptop that is hosting
+  - and have the students connect to it and connect your laptop that is hosting to your phone hotspot
   - url http://<pc-ip>:8000/attendance
 
 veryy important note:
