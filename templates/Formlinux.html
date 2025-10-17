@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Système & Cybersécurité</title>
+  <style>
+    body {
+      font-family: "Consolas", "Courier New", monospace;
+      background-color: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    h2 { color: #00ffff; text-shadow: 0 0 10px #00ffff; text-align: center; margin-bottom: 30px; }
+    form {
+      background: rgba(20, 25, 30, 0.9);
+      border: 2px solid #00ffff33;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 0 25px #00ffff22;
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    input[type="text"], textarea {
+      width: 100%;
+      background-color: #161b22;
+      border: 1px solid #00ffff33;
+      color: #e6edf3;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-family: inherit;
+    }
+    input[type="radio"], input[type="checkbox"] { accent-color: #00ffff; margin-right: 6px; }
+    button {
+      background: #00ffff; color: #0d1117; font-weight: bold; border: none; border-radius: 8px;
+      padding: 12px 25px; cursor: pointer; transition: 0.3s; display: block; margin: 0 auto; font-size: 16px;
+    }
+    button:hover { background: #00cccc; box-shadow: 0 0 15px #00ffffaa; }
+  </style>
+</head>
+<body>
+  <h2>Cybersecurity Attendance & Quiz</h2>
+  <form method="POST" action="/submit">
+    <label>Full Name:</label><br>
+    <input type="text" name="name" required><br>
+
+    <label>Email:</label><br>
+    <input type="text" name="email" required><br>
+
+    <!-- Q1 -->
+    <p><b>1. C’est quoi un système d’exploitation (OS)?</b></p>
+    <label><input type="radio" name="q1" value="Un navigateur web"> Un navigateur web</label><br>
+    <label><input type="radio" name="q1" value="Un antivirus"> Un antivirus</label><br>
+    <label><input type="radio" name="q1" value="Un logiciel qui permet d’écrire du code"> Un logiciel qui permet d’écrire du code</label><br>
+    <label><input type="radio" name="q1" value="Un programme qui gère le matériel et les logiciels d’un ordinateur"> Un programme qui gère le matériel et les logiciels d’un ordinateur</label><br><br>
+
+    <!-- Q2 -->
+    <p><b>2. Lequel de ces exemples est un système d’exploitation ?</b></p>
+    <label><input type="checkbox" name="q2" value="bash"> bash</label><br>
+    <label><input type="checkbox" name="q2" value="Linux"> Linux</label><br>
+    <label><input type="checkbox" name="q2" value="Windows"> Windows</label><br>
+    <label><input type="checkbox" name="q2" value="shell"> shell</label><br>
+    <label><input type="checkbox" name="q2" value="MacOS"> MacOS</label><br><br>
+
+    <!-- Q3 -->
+    <p><b>3. C'est quoi BIOS?</b></p>
+    <label><input type="radio" name="q3" value="Basic input output system"> Basic input output system</label><br>
+    <label><input type="radio" name="q3" value="Binary Integrated Operating Software"> Binary Integrated Operating Software</label><br>
+    <label><input type="radio" name="q3" value="Basic Internal Operating System"> Basic Internal Operating System</label><br>
+    <label><input type="radio" name="q3" value="Base Input Operation Setup"> Base Input Operation Setup</label><br><br>
+
+    <!-- Q4 -->
+    <p><b>4. Avant le démarrage de la machine, l'OS se trouve dans ?</b></p>
+    <label><input type="radio" name="q4" value="ROM"> ROM</label><br>
+    <label><input type="radio" name="q4" value="RAM"> RAM</label><br>
+    <label><input type="radio" name="q4" value="Disque dur"> Disque dur</label><br><br>
+
+    <!-- Q5 -->
+    <p><b>5. Après le démarrage de la machine, l'OS se trouve dans ?</b></p>
+    <label><input type="radio" name="q5" value="RAM"> RAM</label><br>
+    <label><input type="radio" name="q5" value="ROM"> ROM</label><br>
+    <label><input type="radio" name="q5" value="CPU"> CPU</label><br><br>
+
+    <!-- Q6 -->
+    <p><b>6. Distributions Linux ?</b></p>
+    <label><input type="checkbox" name="q6" value="Fedora"> Fedora</label><br>
+    <label><input type="checkbox" name="q6" value="shell"> shell</label><br>
+    <label><input type="checkbox" name="q6" value="kali"> kali</label><br>
+    <label><input type="checkbox" name="q6" value="debian"> debian</label><br>
+    <label><input type="checkbox" name="q6" value="powerShell"> powerShell</label><br><br>
+
+    <!-- Q7 -->
+    <p><b>7. Le BIOS se trouve ?</b></p>
+    <label><input type="radio" name="q7" value="RAM"> RAM</label><br>
+    <label><input type="radio" name="q7" value="ROM"> ROM</label><br>
+    <label><input type="radio" name="q7" value="Disque dur"> Disque dur</label><br>
+    <label><input type="radio" name="q7" value="CPU"> CPU</label><br><br>
+
+    <!-- Q8 -->
+    <p><b>8. C'est quoi « / » ?</b></p>
+    <label><input type="radio" name="q8" value="Répértoire racine"> Répértoire racine</label><br>
+    <label><input type="radio" name="q8" value="root"> root</label><br>
+    <label><input type="radio" name="q8" value="admin"> admin</label><br>
+    <label><input type="radio" name="q8" value="fichier"> fichier</label><br><br>
+
+    <!-- Q9 -->
+    <p><b>9. C'est quoi « bin » ?</b></p>
+    <label><input type="radio" name="q9" value="répértoire"> répértoire</label><br>
+    <label><input type="radio" name="q9" value="fichier"> fichier</label><br>
+    <label><input type="radio" name="q9" value="programme"> programme</label><br>
+    <label><input type="radio" name="q9" value="code source"> code source</label><br><br>
+
+    <!-- Q10 -->
+    <p><b>10. On trouve quoi dans « /bin » ?</b></p>
+    <label><input type="radio" name="q10" value="commandes root"> commandes root</label><br>
+    <label><input type="radio" name="q10" value="commandes user"> commandes user</label><br>
+    <label><input type="radio" name="q10" value="rien"> rien</label><br><br>
+
+    <!-- Q11 -->
+    <p><b>11. Quels fichiers trouve-t-on dans « /etc » ?</b></p>
+    <label><input type="checkbox" name="q11" value="passwd"> passwd</label><br>
+    <label><input type="checkbox" name="q11" value="ls"> ls</label><br>
+    <label><input type="checkbox" name="q11" value="shadow"> shadow</label><br>
+    <label><input type="checkbox" name="q11" value="bin"> bin</label><br><br>
+
+    <!-- Q12 -->
+    <p><b>12. Dans « /etc/shadow », on a ?</b></p>
+    <label><input type="radio" name="q12" value="des informations  sur l'user"> des informations  sur l'user</label><br>
+    <label><input type="radio" name="q12" value="des informations sur password"> des informations sur password</label><br>
+    <label><input type="radio" name="q12" value="des informations sur group"> des informations sur group</label><br><br>
+
+    <!-- Q13 -->
+    <p><b>13. Dans « /etc/passwd », on trouve ?</b></p>
+    <label><input type="radio" name="q13" value="des informations sur root"> des informations sur root</label><br>
+    <label><input type="radio" name="q13" value="des informations sur user"> des informations sur user</label><br>
+    <label><input type="radio" name="q13" value="des informations sur passwords"> des informations sur passwords</label><br><br>
+
+    <!-- Q14 -->
+    <p><b>14. C'est quoi la structure de fichier « /etc/passwd » ?</b></p>
+    <label><input type="radio" name="q14" value="Login:passwd:UID:GUID:Comment:HomeDirectory:Shell"> Login:passwd:UID:GUID:Comment:HomeDirectory:Shell</label><br>
+    <label><input type="radio" name="q14" value="Login:UID:passwd:GUID:Comment:HomeDirectory:Shell"> Login:UID:passwd:GUID:Comment:HomeDirectory:Shell</label><br>
+    <label><input type="radio" name="q14" value="Login:passwd:UID:GUID:Comment:Shell:HomeDirectory"> Login:passwd:UID:GUID:Comment:Shell:HomeDirectory</label><br><br>
+
+    <!-- Q15 -->
+    <p><b>15. UID=0 veut dire ?</b></p>
+    <input type="text" name="q15" placeholder="Votre réponse..."><br><br>
+
+    <!-- Q16 -->
+    <p><b>16. C'est quoi la différence entre Linux et Windows ? (au minimum deux)</b></p>
+    <textarea name="q16" rows="3" placeholder="Votre réponse..."></textarea><br><br>
+
+    <!-- Q17 -->
+    <p><b>17. Pourquoi les hackers préfèrent Linux ?</b></p>
+    <textarea name="q17" rows="3" placeholder="Votre réponse..."></textarea><br><br>
+
+    <!-- Q18 -->
+    <p><b>18. Quelle distribution est plus pratique pour la cybersécurité ? Et pourquoi ?</b></p>
+    <textarea name="q18" rows="3" placeholder="Votre réponse..."></textarea><br><br>
+
+    <!-- Q19 -->
+    <p><b>19. Corrige l'erreur dans : ls /etc/shadow (Bonus)</b></p>
+    <input type="text" name="q19" placeholder="Votre réponse..."><br><br>
+
+    <button type="submit">Soumettre</button>
+  </form>
+</body>
+</html>

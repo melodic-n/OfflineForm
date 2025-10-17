@@ -20,3 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+results/quiz_results.csv
+templates/feedback.html
+templates/feedback_thanks.html
+templates/Formlinux.html

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance</title>
+  <style>
+    body {
+      font-family: "Consolas", "Courier New", monospace;
+      background-color: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: rgba(20, 25, 30, 0.9);
+      border: 2px solid #00ffff33;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 25px #00ffff22;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      background-color: #161b22;
+      border: 1px solid #00ffff33;
+      color: #e6edf3;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+
+    input[type="radio"] {
+      accent-color: #00ffff;
+      margin-right: 6px;
+    }
+
+    button {
+      background: #00ffff;
+      color: #0d1117;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: block;
+      margin: 20px auto 0;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #00cccc;
+      box-shadow: 0 0 15px #00ffffaa;
+    }
+  </style>
+</head>
+<body>
+  <h2>Attendance Form</h2>
+  <form>
+    <label>Full Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Email:</label>
+    <input type="text" name="email" required>
+
+    <p><b>Filière / Année</b></p>
+    <label><input type="radio" name="fa" value="SICN 1"> SICN 1</label>
+    <label><input type="radio" name="fa" value="SICN 2"> SICN 2</label>
+    <label><input type="radio" name="fa" value="DLA 1"> DLA 1</label>
+    <label><input type="radio" name="fa" value="DLA 2"> DLA 2</label>
+    <label><input type="radio" name="fa" value="SDBDAI 1"> SDBDAI 1</label>
+    <label><input type="radio" name="fa" value="SDBDAI 2"> SDBDAI 2</label>
+    <label><input type="radio" name="fa" value="CP 1"> CP 1</label>
+    <label><input type="radio" name="fa" value="CP 2"> CP 2</label>
+    <label>Other:</label>
+    <input type="text" name="fa" placeholder="Other...">
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
