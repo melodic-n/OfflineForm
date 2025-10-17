@@ -20,10 +20,6 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-results/*
-
-# But keep this placeholder file
-!results/.gitkeep
 
 templates/feedback.html
 templates/feedback_thanks.html
