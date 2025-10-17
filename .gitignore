@@ -20,7 +20,11 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-results/quiz_results.csv
+results/*
+
+# But keep this placeholder file
+!results/.gitkeep
+
 templates/feedback.html
 templates/feedback_thanks.html
 templates/Formlinux.html

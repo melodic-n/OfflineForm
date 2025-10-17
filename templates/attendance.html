@@ -85,26 +85,26 @@
 </head>
 <body>
   <h2>Attendance Form</h2>
-  <form>
-    <label>Full Name:</label>
-    <input type="text" name="name" required>
+ <form action="/attendance" method="post">
+  <label>Full Name:</label>
+  <input type="text" name="name" required>
 
-    <label>Email:</label>
-    <input type="text" name="email" required>
+  <label>Email:</label>
+  <input type="text" name="email" required>
 
-    <p><b>Filière / Année</b></p>
-    <label><input type="radio" name="fa" value="SICN 1"> SICN 1</label>
-    <label><input type="radio" name="fa" value="SICN 2"> SICN 2</label>
-    <label><input type="radio" name="fa" value="DLA 1"> DLA 1</label>
-    <label><input type="radio" name="fa" value="DLA 2"> DLA 2</label>
-    <label><input type="radio" name="fa" value="SDBDAI 1"> SDBDAI 1</label>
-    <label><input type="radio" name="fa" value="SDBDAI 2"> SDBDAI 2</label>
-    <label><input type="radio" name="fa" value="CP 1"> CP 1</label>
-    <label><input type="radio" name="fa" value="CP 2"> CP 2</label>
-    <label>Other:</label>
-    <input type="text" name="fa" placeholder="Other...">
+  <p><b>Filière / Année</b></p>
+        <label><input type="radio" name="fa" value="SICN 1"> SICN 1</label>
+        <label><input type="radio" name="fa" value="SICN 2"> SICN 2</label>
+        <label><input type="radio" name="fa" value="DLA 1"> DLA 1</label>
+        <label><input type="radio" name="fa" value="DLA 2"> DLA 2</label>
+        <label><input type="radio" name="fa" value="SDBDAI 1"> SDBDAI 1</label>
+        <label><input type="radio" name="fa" value="SDBDAI 2"> SDBDAI 2</label>
+        <label><input type="radio" name="fa" value="CP 1"> CP 1</label>
+        <label><input type="radio" name="fa" value="CP 2"> CP 2</label>
+        <label>Other:</label>
+        <input type="text" name="fa" placeholder="Other...">
+  <button type="submit">Submit</button>
+</form>
 
-    <button type="submit">Submit</button>
-  </form>
 </body>
 </html>
