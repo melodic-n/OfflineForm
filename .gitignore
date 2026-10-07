@@ -21,6 +21,8 @@ rad.json
 #Test results file
 TestResults.xml
 
+/results
 templates/feedback.html
 templates/feedback_thanks.html
 templates/Formlinux.html
+venv/
