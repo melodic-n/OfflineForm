@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan for Attendance</title>
+  <style>
+    body {
+      font-family: "Consolas", "Courier New", monospace;
+      background-color: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(20, 25, 30, 0.9);
+      border: 2px solid #00ffff33;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 25px #00ffff22;
+      text-align: center;
+    }
+
+    img {
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 8px;
+      width: 60vmin;
+      height: 60vmin;
+    }
+
+    .url {
+      margin-top: 20px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #00ffff;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <h2>Scan to sign in</h2>
+  <div class="card">
+    <img src="/qr.svg" alt="QR code to the attendance form">
+    <div class="url">{{ url }}</div>
+  </div>
+</body>
+</html>
